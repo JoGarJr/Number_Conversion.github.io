@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}
+
+select, input, button {
+    margin: 8px;
+    padding: 8px;
+}
+button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10em;
+}
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+p {
+    font-weight: bold;
+    margin: 5px;
+}
+#numberInput{
+    border-radius: 0.5em;
+    font-size: 20px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Number Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Converter</h1>
+
+        <select id="conversionType">
+            <option value="decimal">Decimal</option>
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select><br>
+        <input type="text" id="numberInput" placeholder="Enter number" oninput="updateResult()" readonly>
+        <div class="result-container">
+            <p id="decimalResult">Decimal: </p>
+            <p id="binaryResult">Binary: </p>
+            <p id="octalResult">Octal: </p>
+            <p id="hexResult">Hexadecimal: </p>
+        </div><br>
+        <div class="numpad">
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button onclick="appendToInput('A')">A</button>
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button onclick="appendToInput('B')">B</button>
+            <button onclick="appendToInput('7')">7</button>
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button onclick="appendToInput('C')">C</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button onclick="appendToInput('F')">F</button>
+            <button onclick="appendToInput('E')">E</button>
+            <button onclick="appendToInput('D')">D</button>
+        </div>
+        
+        <button onclick="performConversion()">Convert</button>
+        <button onclick="deleteLast()">Del</button>
+        <button onclick="clearInput()">AC</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
